@@ -13,7 +13,7 @@ public class MyController {
     @Autowired
     private MyService myService;
     
-    @GetMapping
+    @GetMapping("FetchNextNumber")
     public MyModel findNextNumber(@RequestParam Integer categoryCode)
     {
         return myService.findNextNumber(categoryCode);
